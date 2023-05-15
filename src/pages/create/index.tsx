@@ -73,7 +73,7 @@ const Create = () => {
       <div className="my-4">
         <h2 className="text-3xl">Choose Data</h2>
         <div className="flex flex-wrap py-4">
-          {data_from_api.map((e, idx) => (
+          {data_from_api?.map((e, idx) => (
             <h3
               onClick={() => {
                 localStorage.setItem("data", e.data);
