@@ -72,17 +72,21 @@ const Create = () => {
       />
       <div className="my-4">
         <h2 className="text-3xl">Choose Data</h2>
-        <div className="flex flex-wrap py-4">
+        <div className="flex flex-col py-4">
           {data_from_api?.map((e, idx) => (
-            <h3
-              onClick={() => {
-                localStorage.setItem("data", e.data);
-                setData(JSON.parse(e.data)[0]);
-              }}
+            <div
               key={idx}
+              className="inline-flex bg-white text-black rounded-sm m-2"
             >
-              {e.title}
-            </h3>
+              <h3
+                onClick={() => {
+                  localStorage.setItem("data", e.data);
+                  setData(JSON.parse(e.data)[0]);
+                }}
+              >
+                {e.title}
+              </h3>
+            </div>
           ))}
         </div>
       </div>
