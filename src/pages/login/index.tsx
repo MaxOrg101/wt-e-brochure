@@ -94,7 +94,7 @@ function Login() {
             </button>
 
             <div className="flex mb-12 mt-3 ">
-              <p className={b}>Don't have an account?</p>
+              <p className={b}>Don&apos;t have an account?</p>
               <Link
                 href="/signup"
                 className="ml-3 blur-1  text-yellow-500 font-bold"

@@ -2,6 +2,7 @@ import A from "@/components/templates/A";
 import B from "@/components/templates/B";
 import C from "@/components/templates/C";
 import { EventData } from "@/components/templates/types";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import React from "react";
 
@@ -34,4 +35,6 @@ const ChooseTemplate = (p: Props) => {
   );
 };
 
-export default ChooseTemplate;
+export default dynamic(() => Promise.resolve(ChooseTemplate), {
+  ssr: false,
+});
