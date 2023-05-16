@@ -3,6 +3,7 @@ import { EventData } from "@/components/templates/types";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import B from "@/components/templates/B";
+import C from "@/components/templates/C";
 
 type Font = "font-mono" | "font-sans" | "font-serif";
 const Browse = () => {
@@ -24,6 +25,7 @@ const Browse = () => {
   const c: { [key: string]: JSX.Element } = {
     a: <A event_data={events_data[sheet_index]}></A>,
     b: <B event_data={events_data[sheet_index]}></B>,
+    c: <C event_data={events_data[sheet_index]}></C>,
   };
 
   return (
