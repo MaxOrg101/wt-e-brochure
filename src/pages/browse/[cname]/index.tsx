@@ -60,7 +60,7 @@ const Browse = () => {
           </button>
 
           <select
-            className="bg-black"
+            className="bg-black text-white"
             name="font-s"
             id="font-s"
             onChange={(e) => set_font(e.target.value as Font)}
