@@ -25,7 +25,7 @@ const ChooseTemplate = (p: Props) => {
             <B event_data={p.data}></B>
           </Link>
         </div>
-        <div className="w-1/3 duration-100 hover:scale-105 ml-10 h-96 overflow-hidden">
+        <div className="mt-2 w-1/3 duration-100 hover:scale-105 ml-10 h-96 overflow-hidden">
           <Link href="/browse/c">
             <C event_data={p.data}></C>
           </Link>
